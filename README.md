@@ -12,7 +12,8 @@ Repositorio para el desarrollo del proyecto de Infosoc
 Sujeto a modificación en base a lo que se lea en la documentación
 
 * HTML5
-* CSS -> TailwindCSS
+* CSS
 * JavaScript
-* NodeJS
-* Framework: React
+* GO
+* Framework: Svelte
+* BdD: a eleccion de doxter
