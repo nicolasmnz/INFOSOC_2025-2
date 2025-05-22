@@ -18,13 +18,14 @@
 		align-items: center; /* centra el contenido */
 		background-color: #3b5c84;
 		padding: 1em 1.5em;
-		height: 4em;
+		height: 3.4em;
 	}
 	.nav-title {
 		font-size: 1.4em;
 		font-weight: 600;
 		text-align: center;
 		flex: 1;
+		color: #ffff;
 	}
 	:global(.bell-icon) {
 		margin-left: auto;
