@@ -24,8 +24,6 @@ Sujeto a modificación en base a lo que se lea en la documentación
 
 Una guía organizada para desarrollar funcionalidades clave y mejorar progresivamente la aplicación PWA de avisos universitarios.
 
----
-
 ## 🚀 MVP (Versión Mínima Viable)
 
 - [x] Interfaz de botones circulares con iconos
@@ -35,8 +33,6 @@ Una guía organizada para desarrollar funcionalidades clave y mejorar progresiva
 - [x] Navegación entre vistas simples
 - [ ] Detalle del aviso (al tocar un botón)
 
----
-
 ## 🔔 Funcionalidades Esenciales
 
 - [ ] **Notificaciones push** con `vite-plugin-pwa`
@@ -45,8 +41,6 @@ Una guía organizada para desarrollar funcionalidades clave y mejorar progresiva
 - [ ] Fecha y hora en los avisos
 - [ ] Avisos favoritos o marcados como importantes
 
----
-
 ## 🎨 Mejora de la Experiencia (UX/UI)
 
 - [ ] Tema claro/oscuro con selector
@@ -54,7 +48,6 @@ Una guía organizada para desarrollar funcionalidades clave y mejorar progresiva
 - [ ] Animaciones suaves entre vistas
 - [ ] Indicador de nuevos avisos
 
----
 
 ## 🔐 Administración y Control
 
@@ -63,8 +56,6 @@ Una guía organizada para desarrollar funcionalidades clave y mejorar progresiva
 - [ ] Expiración automática de avisos antiguos
 - [ ] Historial de avisos
 
----
-
 ## 🛠 Técnicas y optimización
 
 - [ ] Guardar preferencias del usuario (localStorage)
@@ -72,15 +63,11 @@ Una guía organizada para desarrollar funcionalidades clave y mejorar progresiva
 - [ ] Accesibilidad básica (A11y)
 - [ ] Validaciones de formulario
 
----
-
 ## 📈 Ideas futuras
 
 - [ ] Estadísticas de clics o avisos más vistos
 - [ ] Reportar aviso como incorrecto o spam
 - [ ] Modo lectura rápida (solo resumen de avisos)
-
----
 
 📁 **Archivos recomendados** para estructura modular:
 
