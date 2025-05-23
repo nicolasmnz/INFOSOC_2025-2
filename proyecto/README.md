@@ -40,6 +40,7 @@ En la terminal de Windows, como administrador se configura
 ```cmd
 netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=4173 connectaddress=LA_IP_DE_WSL connectport=4173
 ```
+Reemplaza 'LA_IP_DE_WSL' por la dirección IP que obtuviste en el paso anterior
 > La IP de WSL puede cambiar cada vez que reinicias el entorno, por lo que podrías necesitar actualizar el reenvío cuando ello suceda.
 5. Conseguir la IPv4 de Windows:
 ```cmd
