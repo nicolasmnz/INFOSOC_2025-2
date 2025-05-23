@@ -2,12 +2,12 @@
 	import Header from '$lib/Header.svelte';
 	import IconsGrid from '$lib/IconsGrid.svelte';
 
-	import { CircleAlert, ClockAlert, UtensilsCrossed } from '@lucide/svelte';
+	import { ClockAlert, UserRoundX, UtensilsCrossed } from '@lucide/svelte';
 
 	let items = [
 		{ icon: UtensilsCrossed, label: 'Sin comida', color: '#e74c3c' },
 		{ icon: ClockAlert, label: 'Espera larga', color: '#f39c12' },
-		{ icon: CircleAlert, label: 'Sin espacio', color: '#c0392b' }
+		{ icon: UserRoundX, label: 'Sin asientos disponibles', color: '#c0392b' }
 	];
 	let title = 'Reportar problema en el casino';
 </script>

@@ -42,6 +42,14 @@
 	</main>
 {/if}
 
+<!--
+Rojo claro (#e74c3c) para cosas urgentes pero no críticas.
+
+Rojo oscuro (#c0392b) para fallas graves (fuera de servicio).
+
+Naranja (#f39c12) para advertencias moderadas.
+-->
+
 <style>
 	.grid-container {
 		display: grid;
