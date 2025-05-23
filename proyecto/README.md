@@ -1,3 +1,4 @@
+# App
 ## Instalación
 
 1. Clona el repositorio:
@@ -18,27 +19,44 @@ npm run dev
 
 ## Version de producción (modo preview)
 ```bash
-npm build
-npm preview
+npm run build
+npm run preview
 ```
 Esto por defecto abrirá el sitio en:  
 `http://localhost:4173`
 
-### Testeo en celular
+# Testeo en celular en WSL
 1. Ejecuta la app en modo preview
-2. Obtén la IP de tu computador:
-```bash
-hostname -I
+2. Agregar una regla en el Firewall. Como administrador, abrir la powerShell:
+```cmd
+New-NetFirewallRule -DisplayName "Allow Vite 4173" -Direction Inbound -Protocol TCP –LocalPort 4173 –Action Allow
 ```
-3. Abre la IP en tu celular:
+3. Configurar el reenvio de puertos(portproxy):
+Abrir una terminal de WSL, para obtener la IP
+```bash
+ip addr show eth0 | grep "inet " | awk '{print $2}' | cut -d/ -f1
+```
+En la terminal de Windows, como administrador se configura
+```cmd
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=4173 connectaddress=LA_IP_DE_WSL connectport=4173
+```
+> La IP de WSL puede cambiar cada vez que reinicias el entorno, por lo que podrías necesitar actualizar el reenvío cuando ello suceda.
+5. Conseguir la IPv4 de Windows:
+```cmd
+ipconfig
+```
+6. Abre la IPv4 en tu celular:
 En el navegador móvil, abre:
 
 ```
-http://192.168.0.12:4173
+http://[tu-IPv4]:4173
 ```
 (Reemplazar con la IP local real)
 
-4. Revisar manifest.webmanifest:
+
+## Forzar PWA:
+
+ Revisar manifest.webmanifest:
 - Instalación app desde el navegador
 - Función sin conexión después de la primera carga (offline)
 - Ícono y nombre personalizados 
